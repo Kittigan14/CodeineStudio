@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+* a {
+    text-decoration: none;
+    color: #F0EFFF;
+}
+
+* li {
+    list-style: none;
+}
+
+body {
+    background-color: #141414;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    background-color: #141414;
+    padding: 15px 0;
+    position: relative;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    display: none;
+}
+
+.logo img{
+    max-width: 100px;
+    transition: all 0.5s ease;
+}
+
+.logo img:hover {
+    transform: translate3d(0 , 5px , 5px);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: 0.875rem;
+}
+
+nav ul li a img {
+    max-width: 35px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a img:hover {
+    transform: translate3d(0 , -5px , -5px);
+}
+
+article {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.title {
+    background: transparent;
+    color: #F0EFFF;
+}
+
+.title h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+.title h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .bar {
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  nav {
+    position: absolute;
+    align-items: center;
+    margin-top: 390px;
+    width: 100px;
+    background-color: #141414;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px #F0EFFF;
+    display: none;
+    left: 80%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 20px 25px;
+    margin: 0;
+  }
+
+  .dis {
+    display: none;
+  }
+
+  .title {
+    transition: all 0.5s ease;
+    margin-top: 60%;
+    font-size: calc(50% + 0.8vmin);
+  }
+}
